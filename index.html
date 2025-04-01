@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="logo">
+          <i class="fab fa-spotify"></i>
+          <span>Spotify</span>
+        </div>
 
+        <nav class="main-nav">
+          <ul>
+            <li class="active">
+              <a href="#"><i class="fas fa-home"></i>Home</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-search"></i>Search</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-book"></i>Your Library</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="playlist-section">
+          <div class="create-playlist">
+            <div class="create-playlist-btn">
+              <i class="fas fa-plus"></i>
+            </div>
+            <span>Create Playlist</span>
+          </div>
+          <div class="liked-songs">
+            <div class="liked-songs-btn">
+              <i class="fas fa-heart"></i>
+            </div>
+            <span>Liked Songs</span>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <header class="top-bar">
+          <div class="navigation-buttons">
+            <button class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+            <button class="nav-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="user-menu">
+            <button class="upgrade-btn">Upgrade</button>
+            <button class="profile-btn">
+              <i class="fas fa-user"></i>
+              <span>Profile</span>
+              <i class="fas fa-caret-down"></i>
+            </button>
+          </div>
+        </header>
+
+        <section class="content">
+          <h1>Trending songs</h1>
+          <div class="trending-songs">
+            <!-- Song cards will be dynamically added here -->
+          </div>
+
+          <h1>Popular artists</h1>
+          <div class="popular-artists">
+            <!-- Artist cards will be dynamically added here -->
+          </div>
+        </section>
+      </main>
+
+      <!-- Now Playing Bar -->
+      <footer class="now-playing-bar">
+        <div class="now-playing-left">
+          <div class="track-info">
+            <img src="https://via.placeholder.com/56" alt="Album Cover" />
+            <div class="track-details">
+              <div class="track-name">Track Name</div>
+              <div class="artist-name">Artist Name</div>
+            </div>
+            <button class="like-btn">
+              <i class="far fa-heart"></i>
+            </button>
+          </div>
+        </div>
+        <div class="now-playing-center">
+          <div class="player-controls">
+            <button class="control-btn"><i class="fas fa-shuffle"></i></button>
+            <button class="control-btn">
+              <i class="fas fa-step-backward"></i>
+            </button>
+            <button class="control-btn play-btn">
+              <i class="fas fa-play"></i>
+            </button>
+            <button class="control-btn">
+              <i class="fas fa-step-forward"></i>
+            </button>
+            <button class="control-btn"><i class="fas fa-repeat"></i></button>
+          </div>
+          <div class="playback-bar">
+            <span class="current-time">0:00</span>
+            <div class="progress-bar">
+              <div class="progress"></div>
+            </div>
+            <span class="total-time">3:45</span>
+          </div>
+        </div>
+        <div class="now-playing-right">
+          <button class="control-btn"><i class="fas fa-list"></i></button>
+          <button class="control-btn"><i class="fas fa-volume-up"></i></button>
+          <div class="volume-bar">
+            <div class="volume-progress"></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
