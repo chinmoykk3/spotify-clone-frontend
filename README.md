@@ -50,4 +50,4 @@ This clone works best in modern browsers that support CSS Grid and Flexbox:
 
 ## Notes
 
-This is a frontend-only clone created for educational purposes. It doesn't include actual music playback functionality or backend integration.
+This is a frontend-only clone created for educational purposes.
