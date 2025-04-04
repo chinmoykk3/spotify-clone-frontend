@@ -23,6 +23,8 @@ git clone <repository-url>
 
 That's it! No additional setup or dependencies required.
 
+
+
 ## Usage
 
 - Click the play button to toggle play/pause
@@ -30,8 +32,8 @@ That's it! No additional setup or dependencies required.
 - Drag the volume bar to adjust volume
 - Click on songs or artists to view their details (demo only)
 - Use the navigation buttons in the top bar
-- Test the responsive design by resizing your browser window
-
+- Test the responsive design by resizing your browser screen/window
+  
 ## Technologies Used
 
 - HTML5
